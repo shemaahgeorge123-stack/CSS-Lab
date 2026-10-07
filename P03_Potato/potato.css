@@ -1,0 +1,267 @@
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px; 
+    color: #555555;
+    background-color: #ffffff;
+    line-height: 1.5;
+}
+
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+}
+
+nav .brand {
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+.nav-primary {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-item a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.2s ease;
+}
+
+.nav-item a:hover {
+    color: #ffffff;
+}
+
+
+.nav-primary .button-cta a {
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    padding: 8px 18px;
+    border-radius: 20px;
+    color: #ffffff;
+}
+
+.nav-primary .button-cta a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: #ffffff;
+}
+
+
+header {
+    position: relative;
+    
+    background: radial-gradient(ellipse at center,
+      rgba(192,169,145,1) 0%,
+      rgba(192,169,145,1) 59%,
+      rgba(168,143,121,1) 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 120px 20px 40px 20px;
+}
+
+.header-title {
+    font-size: 3.2rem;
+    font-weight: 300;
+    color: #ffffff;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+.header-subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 40px;
+}
+
+.header-potato {
+    max-width: 420px;
+    width: 100%;
+    height: auto;
+}
+
+
+.features {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #ffffff;
+}
+
+.features-title {
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: #444444;
+    margin-bottom: 15px;
+}
+
+.features-subtitle {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #888888;
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+    line-height: 1.6;
+}
+
+.feature-potatoes {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.buy-now {
+    background-color: #ffffff;
+    padding: 60px 40px 100px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.order-title {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: #444444;
+    margin-bottom: 60px;
+}
+
+.potato-types {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 20px;
+}
+
+.potato {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+
+.potato:not(:last-child) {
+    border-right: 1px solid #e0e0e0;
+}
+
+.potato-title {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #333333;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+
+.potato-features {
+    list-style: none;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.potato-description {
+    font-size: 0.9rem;
+    color: #888888;
+    font-weight: 300;
+}
+
+
+.btn-order {
+    background-color: transparent;
+    border: 1.5px solid #82c341; 
+    color: #82c341;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 8px 32px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 12px;
+}
+
+
+.btn-order:hover {
+    background-color: #82c341;
+    color: #ffffff;
+}
+
+.potato-price {
+    font-size: 0.8rem;
+    color: #aaaaaa;
+    margin-bottom: 35px;
+}
+
+.potato-img {
+    max-height: 120px;
+    width: auto;
+    object-fit: contain;
+    margin-top: auto; 
+}
+
+
+footer {
+    background-color: #6d6053; 
+    padding: 25px 20px;
+    text-align: center;
+}
+
+.footer-text {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+
+@media (max-width: 768px) {
+    .potato-types {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .potato:not(:last-child) {
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+        padding-bottom: 40px;
+    }
+    header {
+        min-height: auto;
+    }
+    .header-title {
+        font-size: 2.2rem;
+    }
+}
+ 

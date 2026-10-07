@@ -1,0 +1,149 @@
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #214287; 
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #ffffff; 
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+}
+
+.nav-brand {
+    height: 24px; 
+    letter-spacing: 5px;
+}
+
+.nav-primary {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.nav-item a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 0.85rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: color 0.2s ease;
+}
+
+.nav-item a:hover {
+    color: #ffffff;
+}
+
+
+.cta-btn a, a.header-btn {
+    display: inline-block;
+    background-color: #49bcf2; 
+    color: #ffffff !important;
+    padding: 8px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.cta-btn a:hover, a.header-btn:hover {
+    background-color: #3aa6d6;
+}
+
+
+header {
+    text-align: center;
+}
+
+.header-title {
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin: 90px 0 10px 0;
+    letter-spacing: 1px;
+}
+
+.header-subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: capitalize;
+    margin: 0 0 40px 0;
+    letter-spacing: 1px;
+}
+
+#button-container {
+    margin-bottom: 90px;
+}
+
+
+.header-services {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.service {
+    flex: 1;
+    max-width: 400px;
+    padding: 60px 40px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+
+.service:hover {
+    background-color: #49bcf2; 
+}
+
+.service:hover .service-title,
+.service:hover .service-intro,
+.service:hover .service-link {
+    color: #ffffff;
+}
+
+
+.service-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 25px 0;
+    line-height: 1.4;
+}
+
+.service-intro {
+    font-size: 0.85rem;
+    font-weight: 300;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+}
+
+.service-link {
+    display: block;
+    margin-top: 20px;
+    color: #49bcf2; 
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
